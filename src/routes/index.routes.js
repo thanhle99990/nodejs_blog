@@ -1,8 +1,7 @@
-const newsRouter =  require('./news.routes')
-const siteRouter =  require('./site.routes')
+const newsRouter = require('./news.routes');
+const siteRouter = require('./site.routes');
 
-function route(app){
-
+function route(app) {
     app.use('/news', newsRouter);
     app.use('/', siteRouter);
 
