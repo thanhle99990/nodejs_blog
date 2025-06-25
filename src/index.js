@@ -16,10 +16,10 @@ app.set('views', path.join(__dirname, 'resources/views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.urlencoded({ extended: true }));
-app.use(  express.json());
+app.use(express.json());
 
-route(  app);
+route( app);
 
-      app.listen(port, () => {
-          console.log(`Example app listening on port ${port}`);
-      });
+app.listen(port, () => {
+console.log(`Example app listening on port ${port}`);
+});
